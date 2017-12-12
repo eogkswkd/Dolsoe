@@ -1,9 +1,13 @@
 # 2017-12-12 자판기.py
+import sys # 2 - 5는 아톰 스크립트 한글 실행을 위해
+import io
+sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding = 'utf-8')
+sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
 write = """먹고 싶은 음료를 선택하세요
 1. 코카콜라
 2. 펩시
 3. 맥콜
-4. 칠성사이다 """
+"""
 money = 5000
 while money:
     print(write)
