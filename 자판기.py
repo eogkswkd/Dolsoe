@@ -6,9 +6,9 @@ sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
 write = """먹고 싶은 음료를 선택하세요
 1. 코카콜라
 2. 펩시
-3. 맥콜
-"""
+3. 맥콜 """
 money = 5000
+print("원래 내 돈:{money}".format(money = money))
 while money:
     print(write)
     number = int(input("먹고 싶은 음료의 번호를 입력하세요:"))
@@ -32,7 +32,7 @@ while money:
         if money >= 1000:
             print("맥콜을 먹었습니다")
             money -= 1000
-            print("잔고: {money}".format(money))
+            print("잔고: {}".format(money))
         else:
             print("잔액이 부족합니다.")
             continue
