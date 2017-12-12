@@ -1,0 +1,2 @@
+# Dolsoe
+Studying Programming
