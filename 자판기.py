@@ -8,7 +8,7 @@ write = """먹고 싶은 음료를 선택하세요
 2. 펩시
 3. 맥콜 """
 money = 5000
-print("원래 내 돈:{money}".format(money = money))
+print("원래 내 돈:{money}".format(money = money)) # 조심하슈!
 while money:
     print(write)
     number = int(input("먹고 싶은 음료의 번호를 입력하세요:"))
